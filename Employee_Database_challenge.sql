@@ -63,3 +63,10 @@ WHERE (de.to_date = '9999-01-01')
 ORDER BY e.emp_no ASC;
 -- show the table
 SELECT * FROM mentor_eligible;
+
+SELECT COUNT(emp_no), title
+FROM mentor_eligible
+GROUP BY title
+ORDER BY COUNT(emp_no);
+
+
